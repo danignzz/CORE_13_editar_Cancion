@@ -9,4 +9,6 @@ import com.danignz.canciones.modelos.Cancion;
 public interface RepositorioCancion extends CrudRepository<Cancion,Long>{
 
     List<Cancion>findAll();
+
+    void deleteById(Long id);
 } 
