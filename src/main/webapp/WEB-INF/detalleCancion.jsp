@@ -16,6 +16,12 @@
         <p><strong>Idioma:</strong> ${cancion.idioma}</p>
         <p><strong>Fecha de Creación:</strong> ${cancion.fechaCreacion}</p>
         <p><strong>Fecha de Actualización:</strong> ${cancion.fechaActualizacion}</p>
+        <td>
+        <form action="${pageContext.request.contextPath}/eliminar/cancion/${cancion.id}" method="POST">
+            <input type="hidden" name="_method" value="DELETE"/>
+            <button type="submit">Eliminar Canción</button>
+        </form>
+        </td>
 
         <a href="${pageContext.request.contextPath}/canciones">Volver a lista de canciones</a>
         <a href="/canciones/formulario/editar/${cancion.id}">Editar Canción</a>
