@@ -8,12 +8,13 @@
 </head>
 <body>
     <h1>Lista de Canciones</h1>
-   <table>
+    <table>
     <thead>
         <tr>
             <th>Título</th>
             <th>Autor</th>           
             <th>Detalle</th> 
+            
         </tr>
     </thead>
     <tbody>
@@ -22,8 +23,10 @@
             <td>${c.titulo}</td>
             <td>${c.artista}</td>
             <td><a href="${pageContext.request.contextPath}/canciones/detalle/${c.id}">Ver Detalle</a></td>
+
         </tr>
         </c:forEach>
+
     </tbody>
    </table>
    <a href="/canciones/formulario/agregar">Agregar Canción</a>
